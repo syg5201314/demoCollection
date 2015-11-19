@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="animation">
+        <item>.animation.sandbox.BaseActivity</item>
+    </string-array>
+</resources>

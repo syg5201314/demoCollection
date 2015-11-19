@@ -1,0 +1,133 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sunning.democollection">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--主题(Theme)-->
+        <!--一级分类-->
+        <activity
+            android:name=".theme.ThemeActivity"
+            android:label="@string/theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+
+        <!--二级分类-->
+
+        <!--主题(Theme)结束-->
+
+
+        <!--===================================华丽的分割线==============================================-->
+
+        <!--动画(Animation)-->
+        <!--一级分类-->
+        <activity
+            android:name=".animation.AnimationActivity"
+            android:label="@string/animation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+
+            <!--动画二级分类-->
+            <activity
+                android:label="MaterialTransitions Material 风格的过渡动画效果"
+                android:name=".animation.sandbox.BaseActivity">
+                <category android:name="com.demo.view"/>
+            </activity>
+
+        <!--动画(Animation)结束-->
+
+        <!--===================================华丽的分割线==============================================-->
+
+
+        <!--图标(Chart)-->
+        <!--一级分类-->
+        <activity
+            android:name=".chart.ChartActivity"
+            android:label="@string/chart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+
+        <!--二级分类-->
+
+        <!--图标(Chart) 结束-->
+
+
+        <!--===================================华丽的分割线==============================================-->
+
+
+        <!--字体(Font)-->
+        <!--一级分类-->
+        <activity
+            android:name=".font.FontActivity"
+            android:label="@string/font">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+
+        <!--二级分类-->
+
+        <!--字体(Font)-->
+
+        <!--===================================华丽的分割线==============================================-->
+
+        <!--绘图(drawing)-->
+        <!--一级分类-->
+        <activity
+            android:name=".draw.DrawActivity"
+            android:label="@string/Drawing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+
+        <!--二级分类-->
+
+        <!--绘图(Font)-->
+
+        <!--===================================华丽的分割线==============================================-->
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+</manifest>
