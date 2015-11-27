@@ -111,6 +111,26 @@
         <!--绘图(Font)-->
 
         <!--===================================华丽的分割线==============================================-->
+        <!--view(view)-->
+        <!--一级分类-->
+        <activity
+            android:name=".view.ViewActivity"
+            android:label="@string/view">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+
+        <!--二级分类-->
+        <!--动画二级分类-->
+        <activity
+            android:label="SortableTableView可以排序和定制的TableView"
+            android:name=".view.tableviewexample.MainActivity">
+            <category android:name="com.demo.view"/>
+        </activity>
+
+        <!--===================================华丽的分割线==============================================-->
 
 
     </application>

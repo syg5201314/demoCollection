@@ -3,4 +3,7 @@
     <string-array name="animation">
         <item>.animation.sandbox.BaseActivity</item>
     </string-array>
+    <string-array name="customView">
+        <item>.view.tableviewexample.MainActivity</item>
+    </string-array>
 </resources>

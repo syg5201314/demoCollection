@@ -9,6 +9,16 @@
     <string name="chart">图表(Chart)</string>
     <string name="font">字体(Font)</string>
     <string name="Drawing">绘图(Drawing)</string>
+    <string name="view">自定义View(CustomView)</string>
+
+
+    <!--TabView-->
+    <string name="title_activity_main">SortableTableView Example</string>
+    <string name="default_text_ps">180PS</string>
+    <string name="separator">/</string>
+    <string name="default_text_kws">120kW</string>
+    <string name="car_producer_image_content_description">Car Producer</string>
+
 
 
 </resources>
