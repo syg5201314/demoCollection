@@ -1,0 +1,84 @@
+TASK sunning.democollection id=1168
+  ACTIVITY sunning.democollection/.design.snackbar.SnackbarActivity 1525eaef pid=20864
+    Local FragmentActivity 38e8dc34 State:
+      mCreated=truemResumed=true mStopped=false mReallyStopped=false
+      mLoadersStarted=true
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@3275ca5d
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@3275ca5d
+      mCurState=5 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{bdafd2 V.E..... ... 0,0-1080,1920}
+        android.widget.LinearLayout{2ac208a3 V.E..... ... 0,0-1080,1920}
+          android.view.ViewStub{245187a0 G.E..... ... 0,0-0,0 #1020385}
+          android.widget.FrameLayout{13c9af59 V.E..... ... 0,0-1080,1920}
+            android.support.v7.widget.ActionBarOverlayLayout{1822f71e V.E..... ... 0,0-1080,1920 #7f0d0058 app:id/decor_content_parent}
+              android.support.v7.widget.ContentFrameLayout{2d628bff V.E..... ... 0,0-1080,1920 #1020002 android:id/content}
+                android.widget.Button{1fd77dcc VFED..C. ... 0,0-200,200}
+              android.support.v7.widget.ActionBarContainer{edce815 V.E..... ... 0,66-1080,234 #7f0d0059 app:id/action_bar_container}
+                android.support.v7.widget.Toolbar{3803672a V.E..... ... 0,0-1080,168 #7f0d005a app:id/action_bar}
+                  android.support.v7.widget.ActionMenuView{175de91b V.E..... ... 1080,0-1080,168}
+                android.support.v7.widget.ActionBarContextView{35e4aab8 G.E..... ... 0,0-0,0 #7f0d005b app:id/action_context_bar}
+
+  ACTIVITY sunning.democollection/.design.DesignActivity 286a6759 pid=20864
+    Local FragmentActivity 12386940 State:
+      mCreated=truemResumed=false mStopped=true mReallyStopped=true
+      mLoadersStarted=true
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@20b0f091
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@20b0f091
+      mCurState=2 mStateSaved=true mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{35c8cbf6 I.E..... ... 0,0-1080,1920}
+        android.widget.LinearLayout{ae7fbf7 V.E..... ... 0,0-1080,1920}
+          android.view.ViewStub{2b95ba64 G.E..... ... 0,0-0,0 #1020385}
+          android.widget.FrameLayout{3ae304cd V.E..... ... 0,0-1080,1920}
+            android.support.v7.widget.ActionBarOverlayLayout{1adb182 V.E..... ... 0,0-1080,1920 #7f0d0058 app:id/decor_content_parent}
+              android.support.v7.widget.ContentFrameLayout{2f966093 V.E..... ... 0,0-1080,1920 #1020002 android:id/content}
+                android.widget.LinearLayout{192618d0 V.E..... ... 0,0-1080,1920}
+                  android.widget.RelativeLayout{11a820c9 V.E..... ... 0,0-1080,168 #7f0d0093 app:id/toolbar_container}
+                    android.support.v7.widget.Toolbar{230963ce V.E..... ... 0,0-1080,0 #7f0d0094 app:id/toolbar}
+                    android.widget.LinearLayout{6bc72ef V.E..... ... 18,0-1080,168}
+                      com.balysv.materialmenu.MaterialMenuView{1d1bf1fc V.ED.... ... 0,24-120,144 #7f0d0095 app:id/material_menu_button}
+                      android.support.v7.widget.AppCompatTextView{d890085 V.ED.... ... 144,47-530,120 #7f0d0096 app:id/toolbar_title}
+                  android.widget.ListView{2d5beeda VFED.VC. F.. 0,168-1080,1920 #7f0d006f app:id/main_listview}
+                    android.support.v7.widget.AppCompatTextView{29874f0b V.ED.... ... 0,0-1080,144 #1020014 android:id/text1}
+              android.support.v7.widget.ActionBarContainer{163431e8 V.E..... ... 0,66-1080,234 #7f0d0059 app:id/action_bar_container}
+                android.support.v7.widget.Toolbar{1cde2001 V.E..... ... 0,0-1080,168 #7f0d005a app:id/action_bar}
+                  android.support.v7.widget.ActionMenuView{3a1a1ea6 V.E..... ... 1080,0-1080,168}
+                android.support.v7.widget.ActionBarContextView{cd9d0e7 G.E..... ... 0,0-0,0 #7f0d005b app:id/action_context_bar}
+
+  ACTIVITY sunning.democollection/.MainActivity 1355136 pid=20864
+    Local FragmentActivity 3af65e55 State:
+      mCreated=truemResumed=false mStopped=true mReallyStopped=true
+      mLoadersStarted=true
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@100e8494
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@100e8494
+      mCurState=2 mStateSaved=true mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{210bbb3d I.E..... ... 0,0-1080,1920}
+        android.widget.LinearLayout{33397f32 V.E..... ... 0,0-1080,1920}
+          android.view.ViewStub{26e89483 G.E..... ... 0,0-0,0 #1020385}
+          android.widget.FrameLayout{e995600 V.E..... ... 0,0-1080,1920}
+            android.support.v7.widget.ActionBarOverlayLayout{337dce39 V.E..... ... 0,0-1080,1920 #7f0d0058 app:id/decor_content_parent}
+              android.support.v7.widget.ContentFrameLayout{3a7c5c7e V.E..... ... 0,0-1080,1920 #1020002 android:id/content}
+                android.widget.LinearLayout{1295f5df V.E..... ... 0,0-1080,1920}
+                  android.widget.RelativeLayout{243dd22c V.E..... ... 0,0-1080,168 #7f0d0093 app:id/toolbar_container}
+                    android.support.v7.widget.Toolbar{3e6414f5 V.E..... ... 0,0-1080,0 #7f0d0094 app:id/toolbar}
+                    android.widget.LinearLayout{397dc28a V.E..... ... 18,0-1080,168}
+                      com.balysv.materialmenu.MaterialMenuView{c8e10fb V.ED.... ... 0,24-120,144 #7f0d0095 app:id/material_menu_button}
+                      android.support.v7.widget.AppCompatTextView{3ecbe518 V.ED.... ... 144,47-530,120 #7f0d0096 app:id/toolbar_title}
+                  android.widget.ListView{252e0b71 VFED.VC. F.. 0,168-1080,1920 #7f0d006f app:id/main_listview}
+                    android.support.v7.widget.AppCompatTextView{267d7d56 V.ED.... ... 0,0-1080,144 #1020014 android:id/text1}
+                    android.support.v7.widget.AppCompatTextView{2622c1d7 V.ED.... ... 0,145-1080,289 #1020014 android:id/text1}
+                    android.support.v7.widget.AppCompatTextView{17263ac4 V.ED.... ... 0,290-1080,434 #1020014 android:id/text1}
+                    android.support.v7.widget.AppCompatTextView{38c6edad V.ED.... ... 0,435-1080,579 #1020014 android:id/text1}
+                    android.support.v7.widget.AppCompatTextView{9ec18e2 V.ED.... ... 0,580-1080,724 #1020014 android:id/text1}
+                    android.support.v7.widget.AppCompatTextView{9e7a473 V.ED.... ... 0,725-1080,869 #1020014 android:id/text1}
+                    android.support.v7.widget.AppCompatTextView{2fae3f30 V.ED.... ... 0,870-1080,1014 #1020014 android:id/text1}
+              android.support.v7.widget.ActionBarContainer{3391b7a9 V.E..... ... 0,66-1080,234 #7f0d0059 app:id/action_bar_container}
+                android.support.v7.widget.Toolbar{10b6e12e V.E..... ... 0,0-1080,168 #7f0d005a app:id/action_bar}
+                  android.support.v7.widget.ActionMenuView{2e0e14cf V.E..... ... 960,0-1080,168}
+                    android.support.v7.widget.ActionMenuPresenter$OverflowMenuButton{d701e5c VFED..C. ... 0,12-120,156}
+                android.support.v7.widget.ActionBarContextView{39252565 G.E..... ... 0,0-0,0 #7f0d005b app:id/action_context_bar}

@@ -1,0 +1,55 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        e33a86 sunning.democollection/.font.FontActivity
+        bacbf61 sunning.democollection/.chart.ChartActivity
+        15ef476b sunning.democollection/.theme.ThemeActivity
+        20c10cba sunning.democollection/.MainActivity
+        2638ef47 sunning.democollection/.draw.DrawActivity
+        266632c8 sunning.democollection/.animation.AnimationActivity
+        370fb374 sunning.democollection/.design.DesignActivity
+        3a14f09d sunning.democollection/.view.ViewActivity
+
+Key Set Manager:
+  [sunning.democollection]
+      Signing KeySets: 812
+
+Packages:
+  Package [sunning.democollection] (235e7d95):
+    userId=10138 gids=[3003, 1028, 1015]
+    pkg=Package{12a87912 sunning.democollection}
+    codePath=/data/app/sunning.democollection-1
+    resourcePath=/data/app/sunning.democollection-1
+    legacyNativeLibraryDir=/data/app/sunning.democollection-1/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 targetSdk=23
+    versionName=1.0
+    splits=[base]
+    applicationInfo=ApplicationInfo{3c8b38e3 sunning.democollection}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    dataDir=/data/data/sunning.democollection
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2015-12-21 16:30:21
+    firstInstallTime=2015-12-21 14:56:55
+    lastUpdateTime=2015-12-21 16:30:21
+    signatures=PackageSignatures{1ecd5e38 [152e92e0]}
+    permissionsFixed=true haveGids=true installStatus=1
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    User 0:  installed=true hidden=false stopped=false notLaunched=false enabled=0
+    grantedPermissions:
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.GET_TASKS
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_PHONE_STATE
+      android.permission.CALL_PHONE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.FLASHLIGHT
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.CAMERA
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_CONTACTS

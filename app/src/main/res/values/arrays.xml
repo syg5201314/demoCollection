@@ -6,4 +6,8 @@
     <string-array name="customView">
         <item>.view.tableviewexample.MainActivity</item>
     </string-array>
+
+    <string-array name="Design">
+        <item>.design.snackbar.SnackbarActivity</item>
+    </string-array>
 </resources>

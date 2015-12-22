@@ -106,9 +106,27 @@
             </intent-filter>
         </activity>
 
-        <!--二级分类-->
 
-        <!--绘图(Font)-->
+        <!--===================================华丽的分割线==============================================-->
+
+        <!--DesignActivity-->
+        <!--一级分类-->
+        <activity
+            android:name=".design.DesignActivity"
+            android:label="@string/DesignActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="snackBar"
+            android:name=".design.snackbar.SnackbarActivity">
+            <category android:name="com.demo.view"/>
+        </activity>
+
+
 
         <!--===================================华丽的分割线==============================================-->
         <!--view(view)-->
