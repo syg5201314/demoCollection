@@ -23,4 +23,7 @@
     <color name="primaryDark">#FF283593</color>
     <color name="primary">#FF3F51B5</color>
 
+    <color name="window_background">#FFF5F5F5</color>
+
+
 </resources>

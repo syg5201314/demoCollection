@@ -8,9 +8,16 @@ import android.support.v4.util.Pair;
 import android.support.v4.view.ViewCompat;
 import android.view.View;
 
+import javax.inject.Inject;
+
 import sunning.democollection.R;
 
-public class Navigator {
+public class  Navigator {
+
+    @Inject
+    public Navigator() {
+        //empty
+    }
 
     public static int ANIM_DURATION = 350;
 

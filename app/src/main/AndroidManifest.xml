@@ -1,8 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sunning.democollection">
 
+
     <application
-        android:allowBackup="true"
+        android:name=".AndroidApplication"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
@@ -29,6 +31,17 @@
             </intent-filter>
         </activity>
 
+        <!--自定义View-->
+        <!--一级分类-->
+        <activity
+            android:name=".custom.CustomActivity"
+            android:label="@string/custom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+
         <!--二级分类-->
 
         <!--主题(Theme)结束-->
@@ -47,12 +60,12 @@
             </intent-filter>
         </activity>
 
-            <!--动画二级分类-->
-            <activity
-                android:label="MaterialTransitions Material 风格的过渡动画效果"
-                android:name=".animation.sandbox.BaseActivity">
-                <category android:name="com.demo.view"/>
-            </activity>
+        <!--动画二级分类-->
+        <activity
+            android:name=".animation.sandbox.BaseActivity"
+            android:label="MaterialTransitions Material 风格的过渡动画效果">
+            <category android:name="com.demo.view" />
+        </activity>
 
         <!--动画(Animation)结束-->
 
@@ -107,6 +120,13 @@
         </activity>
 
 
+        <activity
+            android:name=".draw.iconfont.IconFontActivity"
+            android:label="iconFont">
+            <category android:name="com.demo.view" />
+        </activity>
+
+
         <!--===================================华丽的分割线==============================================-->
 
         <!--DesignActivity-->
@@ -121,35 +141,162 @@
         </activity>
 
         <activity
-            android:label="snackBar"
-            android:name=".design.snackbar.SnackbarActivity">
-            <category android:name="com.demo.view"/>
+            android:name=".design.snackbar.SnackbarActivity"
+            android:label="snackBar">
+            <category android:name="com.demo.view" />
+        </activity>
+
+        <activity
+            android:name=".design.textinput.TextInputActivity"
+            android:label="TextInputLayout">
+            <category android:name="com.demo.view" />
+        </activity>
+
+        <activity
+            android:name=".design.nav.NavigationViewActivity"
+            android:label="NavigationViewActivity">
+            <category android:name="com.demo.view" />
+        </activity>
+
+        <activity
+            android:name=".design.nav.CheeseDetailActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!--view(view)-->
+        <activity
+            android:name=".custom.view.ViewActivity"
+            android:label="@string/view"></activity>
+        <!--view(view)-->
+        <activity
+            android:name=".custom.viewgroup.ViewGroupActivity"
+            android:label="@string/view"></activity>
+        <activity
+            android:name="sunning.democollection.custom.coordinate.CoordinateActivity"
+            android:label="@string/view"></activity>
+
+        <!--二级分类-->
+        <!--动画二级分类-->
+        <activity
+            android:name=".custom.view.tableviewexample.MainActivity"
+            android:label="SortableTableView可以排序和定制的TableView">
+            <category android:name="com.demo.view" />
+        </activity>
+
+        <activity
+            android:name=".custom.view.timer.TimerActivity"
+            android:label="倒计时">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".custom.view.parent.Text2Parent"
+            android:label="测试viewParentRemove">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".custom.view.smoothcb.SmoothActivity"
+            android:label="SmoothCheckBox">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".custom.view.parent.Text1Parent"
+            android:label="测试viewParentRemove">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".custom.viewgroup.first.MyViewGroupActivity"
+            android:label="自定义的ViewGroup">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".custom.viewgroup.flowlayout.FlowActivity"
+            android:label="自定义的FlowActivity">
+            <category android:name="com.demo.view" />
         </activity>
 
 
 
         <!--===================================华丽的分割线==============================================-->
-        <!--view(view)-->
-        <!--一级分类-->
+
+
+        <!--Learn-->
         <activity
-            android:name=".view.ViewActivity"
-            android:label="@string/view">
+            android:name=".learn._0506mvp_dagger2.LearnActivity"
+            android:label="@string/Learn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.demo.example" />
             </intent-filter>
         </activity>
 
-        <!--二级分类-->
-        <!--动画二级分类-->
+
         <activity
-            android:label="SortableTableView可以排序和定制的TableView"
-            android:name=".view.tableviewexample.MainActivity">
-            <category android:name="com.demo.view"/>
+            android:name=".learn._0301._Learn0301Activity"
+            android:label="事件体系">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".learn._0306.ScrollActivity"
+            android:label="Scroll">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".learn._0316.TestActivity"
+            android:label="testTextView max line">
+            <category android:name="com.demo.view" />
         </activity>
 
-        <!--===================================华丽的分割线==============================================-->
+        <activity
+            android:name=".learn._0316.ViewDragHelperActivity"
+            android:label="ViewDragHelper 的演示">
+            <category android:name="com.demo.view" />
+        </activity>
 
+        <activity
+            android:name=".learn._0318.DataBindingActivity"
+            android:label="binding的演示">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".learn._0331.UserActivity"
+            android:label="dagger2">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".learn._0421.ProgramerActivity"
+            android:label="dagger2">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".learn._0429.Dagger2FinalDemo"
+            android:label="Dagger2FinalDemo">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".learn._0504.RxJavaDemo"
+            android:label="RXJava">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".learn._0506.RxJavaExample"
+            android:label="RxJavaExample">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".learn._0506mvp.MvpActivity"
+            android:label="MVP">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".learn._0506mvp_dagger2.MvpActivity"
+            android:label="MVP+Dagger2">
+            <category android:name="com.demo.view" />
+        </activity>
+
+        <!--Learn End-->
 
     </application>
 

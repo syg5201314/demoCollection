@@ -4,7 +4,7 @@
 ###2 在当前 package 下创建 Activity 并继承 FrameActivity 实现getSecondLevel方法，返回 String[]，该数组定义到 res/value/arrays 中，路径定义到去除 package 的相对路径。(例如)
 <li><p>二级 Activity绝对路径为</p></li>
 <code>
-	sunning.democollection.view.tableviewexample.MainActivity
+	sunning.democollection.custom.view.tableviewexample.MainActivity
 </code>
 <li><p>配置二级路径为</p></li>
 <code>

@@ -6,7 +6,7 @@
                 tools:context="de.codecrafters.tableviewexample.MainActivity">
 
 
-    <sunning.democollection.view.tableviewexample.SortableCarTableView
+    <sunning.democollection.custom.view.tableviewexample.SortableCarTableView
         android:id="@+id/tableView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

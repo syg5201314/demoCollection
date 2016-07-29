@@ -14,5 +14,4 @@ public class AnimationActivity extends FrameActivity {
     protected String[] getSecondLevel() {
         return getResources().getStringArray(R.array.animation);
     }
-
 }

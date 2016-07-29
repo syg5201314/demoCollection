@@ -1,6 +1,7 @@
 package sunning.democollection.draw;
 
 import sunning.democollection.FrameActivity;
+import sunning.democollection.R;
 
 /**
  * Created by sunning on 15/11/19.
@@ -9,6 +10,6 @@ import sunning.democollection.FrameActivity;
 public class DrawActivity extends FrameActivity{
     @Override
     protected String[] getSecondLevel() {
-        return new String[0];
+        return getResources().getStringArray(R.array.Draw);
     }
 }
