@@ -99,8 +99,8 @@ public class CoordinateActivity extends BaseActivity implements View.OnTouchList
                 FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) v.getLayoutParams();
                 params.leftMargin = X - _xDelta;
                 params.topMargin = Y - _yDelta;
-                params.rightMargin = -250;
-                params.bottomMargin = -250;
+//                params.rightMargin = -250;
+//                params.bottomMargin = -250;
                 v.setLayoutParams(params);
             }
         }

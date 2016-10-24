@@ -2,6 +2,7 @@
     package="sunning.democollection">
 
 
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <application
         android:name=".AndroidApplication"
         android:allowBackup="false"
@@ -25,6 +26,16 @@
         <activity
             android:name=".theme.ThemeActivity"
             android:label="@string/theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+        <!--黑科技-->
+        <!--一级分类-->
+        <activity
+            android:name=".black.BlackScienceActivity"
+            android:label="黑科技(BlackScience)">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.demo.example" />
@@ -170,6 +181,12 @@
         <activity
             android:name=".custom.view.ViewActivity"
             android:label="@string/view"></activity>
+        <activity
+            android:name=".custom.paging.PagingLoadingActivity"
+            android:label="滑动分页加载"></activity>
+        <activity
+            android:name=".custom.learn.MeasureActivity"
+            android:label="自定义的一个ViewGroup"></activity>
         <!--view(view)-->
         <activity
             android:name=".custom.viewgroup.ViewGroupActivity"
@@ -177,6 +194,12 @@
         <activity
             android:name="sunning.democollection.custom.coordinate.CoordinateActivity"
             android:label="@string/view"></activity>
+        <activity
+            android:name="sunning.democollection.custom.bezier.BezierActivity"
+            android:label="贝塞尔曲线"></activity>
+        <activity
+            android:name="sunning.democollection.custom.health.QQHealthActivity"
+            android:label="QQ健康"></activity>
 
         <!--二级分类-->
         <!--动画二级分类-->
@@ -199,6 +222,16 @@
         <activity
             android:name=".custom.view.smoothcb.SmoothActivity"
             android:label="SmoothCheckBox">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".custom.view.checkbox.CheckBoxActivity"
+            android:label="CheckBox">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".custom.view.scroll.CustomScrollViewActivity"
+            android:label="CheckBox">
             <category android:name="com.demo.view" />
         </activity>
         <activity
@@ -298,8 +331,24 @@
 
         <!--Learn End-->
 
+        <service
+            android:name=".black.accessibility.MyAccessibilityService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="微信智能摇一摇"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/service" />
+        </service>
+
     </application>
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />

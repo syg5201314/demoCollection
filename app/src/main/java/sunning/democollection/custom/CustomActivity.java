@@ -10,6 +10,10 @@ public class CustomActivity extends FrameActivity {
     protected String[] getSecondLevel() {
         return new String[]{".custom.view.ViewActivity"
                 ,".custom.viewgroup.ViewGroupActivity"
-                ,".custom.coordinate.CoordinateActivity"};
+                ,".custom.coordinate.CoordinateActivity"
+                ,".custom.paging.PagingLoadingActivity"
+                ,".custom.bezier.BezierActivity"
+                ,".custom.health.QQHealthActivity"
+                ,".custom.learn.MeasureActivity"};
     }
 }

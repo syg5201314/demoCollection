@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <sunning.democollection.custom.bezier.BezierView
+        android:layout_height="400dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/bezierView">
+
+    </sunning.democollection.custom.bezier.BezierView>
+
+    <sunning.democollection.custom.bezier.DashView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:src="@mipmap/audi"
+        android:id="@+id/audi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

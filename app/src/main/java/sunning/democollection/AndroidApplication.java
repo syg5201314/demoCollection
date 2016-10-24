@@ -20,8 +20,6 @@ import android.app.Application;
 import com.squareup.leakcanary.LeakCanary;
 
 import sunning.democollection.learn._0429.ApplicationComponent;
-import sunning.democollection.learn._0429.ApplicationModule;
-import sunning.democollection.learn._0429.DaggerApplicationComponent;
 
 /**
  * Android Main Application
@@ -37,9 +35,9 @@ public class AndroidApplication extends Application {
   }
 
   private void initializeInjector() {
-    this.applicationComponent = DaggerApplicationComponent.builder()
-        .applicationModule(new ApplicationModule(this))
-        .build();
+//    this.applicationComponent = DaggerApplicationComponent.builder()
+//        .applicationModule(new ApplicationModule(this))
+//        .build();
   }
 
   public ApplicationComponent getApplicationComponent() {

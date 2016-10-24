@@ -8,6 +8,8 @@
         <item>.custom.view.timer.TimerActivity</item>
         <item>.custom.view.parent.Text1Parent</item>
         <item>.custom.view.smoothcb.SmoothActivity</item>
+        <item>.custom.view.checkbox.CheckBoxActivity</item>
+        <item>.custom.view.scroll.CustomScrollViewActivity</item>
     </string-array>
 
     <string-array name="Design">
