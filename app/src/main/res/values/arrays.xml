@@ -2,6 +2,8 @@
 <resources>
     <string-array name="animation">
         <item>.animation.sandbox.BaseActivity</item>
+        <item>.animation.tween.TweenAnimationActivity</item>
+        <item>.animation.property.PropertyAnimationActivity</item>
     </string-array>
     <string-array name="customView">
         <item>.custom.view.tableviewexample.MainActivity</item>

@@ -9,11 +9,14 @@
     <string name="animation" >动画(animation)</string>
     <string name="chart">图表(Chart)</string>
     <string name="font">字体(Font)</string>
+    <string name="demo">各种例子</string>
     <string name="Drawing">绘图(Drawing)</string>
     <string name="DesignActivity">SupportDesign(Design)</string>
     <string name="view">自定义View(CustomView)</string>
     <string name="Learn">学习(加深理解熟悉过程)</string>
     <string name="black">黑科技</string>
+    <string name="ipc">进程间通信(IPC)</string>
+    <string name="frame">框架搭建</string>
 
 
     <!--TabView-->

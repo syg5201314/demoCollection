@@ -16,7 +16,7 @@
 
     <!--tabView-->
 
-    <color name="table_header_text">#CCFFFFFF</color>
+    <color name="table_header_text">#ccffffff</color>
     <color name="table_data_row_even">#11C5CAE9</color>
     <color name="table_data_row_odd">#33C5CAE9</color>
 
@@ -24,6 +24,7 @@
     <color name="primary">#FF3F51B5</color>
 
     <color name="window_background">#FFF5F5F5</color>
+    <color name="translucent_background">#dd000000</color>
 
 
 </resources>

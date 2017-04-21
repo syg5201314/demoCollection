@@ -4,7 +4,6 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.text.Layout;
 import android.util.Log;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
@@ -46,18 +45,15 @@ public class TestActivity extends BaseActivity{
 
     private void findView() {
         ButtonFactory buttonFactory = new ButtonFactory(this);
-        button = (Button) buttonFactory.create(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(isOpen){
-                    test.setMaxLines(Integer.MAX_VALUE);
-                    mesureTextView();
-                }else{
-                    test.setMaxLines(3);
-                    mesureTextView();
-                }
-                isOpen = !isOpen;
+        button = (Button) buttonFactory.create(v -> {
+            if(isOpen){
+                test.setMaxLines(Integer.MAX_VALUE);
+                mesureTextView();
+            }else{
+                test.setMaxLines(3);
+                mesureTextView();
             }
+            isOpen = !isOpen;
         });
         ViewGroup viewGroup = (ViewGroup) ((ViewGroup) findViewById(android.R.id.content)).getChildAt(0);
         viewGroup.addView(button);

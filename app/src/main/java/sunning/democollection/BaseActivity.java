@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -21,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 import butterknife.InjectView;
+import sunning.democollection.animation.sandbox.Thing;
 
 /**
  * @author sunning
@@ -31,12 +33,18 @@ public class BaseActivity extends AppCompatActivity {
     public
     @InjectView(R.id.toolbar)
     Toolbar toolbar;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
 
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
         currentActivity = this;
         initToolbar();
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
     }
 
     private void initToolbar() {
@@ -121,7 +129,7 @@ public class BaseActivity extends AppCompatActivity {
         });
     }
 
-    public static void log(Object obj , String content){
-        Log.e(obj.getClass().getSimpleName(),content);
+    public static void log(Object obj, String content) {
+        Log.e(obj.getClass().getSimpleName(), content);
     }
 }

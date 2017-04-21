@@ -53,10 +53,7 @@ public class OverScrollView extends ScrollView {
                 break;
         }
 
-        if (getTranslationY() != 0) {
-            return true;
-        }
-        return super.onTouchEvent(event);
+        return getTranslationY() != 0 || super.onTouchEvent(event);
 
     }
 

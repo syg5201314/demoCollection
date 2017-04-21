@@ -61,11 +61,7 @@ public class ThingDetailFragment extends TransitionHelper.BaseFragment {
 
     private void initDetailBody() {
         detailBodyTextView.setAlpha(0);
-        new Handler().postDelayed(new Runnable(){
-            public void run() {
-                detailBodyTextView.animate().alpha(1).start();
-            }
-        }, 500);
+        new Handler().postDelayed(() -> detailBodyTextView.animate().alpha(1).start(), 500);
     }
 
     @Override

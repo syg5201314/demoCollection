@@ -22,7 +22,7 @@ import sunning.democollection.learn._0331.module.UserModule;
  */
 public class UserActivity extends BaseActivity{
 
-//    @Inject User user;
+    @Inject User user;
     @Inject ShoppingCart shoppingCart;
 
     private ActivityComponent mActivityComponent;

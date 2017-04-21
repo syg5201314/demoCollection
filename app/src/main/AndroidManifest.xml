@@ -77,6 +77,16 @@
             android:label="MaterialTransitions Material 风格的过渡动画效果">
             <category android:name="com.demo.view" />
         </activity>
+        <activity
+            android:name=".animation.tween.TweenAnimationActivity"
+            android:label="帧动画">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".animation.property.PropertyAnimationActivity"
+            android:label="属性动画">
+            <category android:name="com.demo.view" />
+        </activity>
 
         <!--动画(Animation)结束-->
 
@@ -129,6 +139,14 @@
                 <category android:name="com.demo.example" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ipc.IPCActivity"
+            android:label="@string/ipc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
 
 
         <activity
@@ -176,30 +194,34 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <!--ipc-->
+        <activity
+            android:name=".ipc.aidl.AIDLActivity"
+            android:label="@string/view" />
 
         <!--view(view)-->
         <activity
             android:name=".custom.view.ViewActivity"
-            android:label="@string/view"></activity>
+            android:label="@string/view" />
         <activity
             android:name=".custom.paging.PagingLoadingActivity"
-            android:label="滑动分页加载"></activity>
+            android:label="滑动分页加载" />
         <activity
             android:name=".custom.learn.MeasureActivity"
-            android:label="自定义的一个ViewGroup"></activity>
+            android:label="自定义的一个ViewGroup" />
         <!--view(view)-->
         <activity
             android:name=".custom.viewgroup.ViewGroupActivity"
-            android:label="@string/view"></activity>
+            android:label="@string/view" />
         <activity
             android:name="sunning.democollection.custom.coordinate.CoordinateActivity"
-            android:label="@string/view"></activity>
+            android:label="@string/view" />
         <activity
             android:name="sunning.democollection.custom.bezier.BezierActivity"
-            android:label="贝塞尔曲线"></activity>
+            android:label="贝塞尔曲线" />
         <activity
             android:name="sunning.democollection.custom.health.QQHealthActivity"
-            android:label="QQ健康"></activity>
+            android:label="QQ健康" />
 
         <!--二级分类-->
         <!--动画二级分类-->
@@ -251,7 +273,23 @@
         </activity>
 
 
+        <!--===================================华丽的分割线= frame=============================================-->
 
+        <activity
+            android:name=".framework.FrameWorkActivity"
+            android:label="@string/frame">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".framework.mvp.MainActivity"
+            android:label="mvp框架">
+            <category android:name="com.demo.view" />
+        </activity>
+
+        <!--===================================华丽的分割线==============================================-->
         <!--===================================华丽的分割线==============================================-->
 
 
@@ -294,6 +332,11 @@
             <category android:name="com.demo.view" />
         </activity>
         <activity
+            android:name=".learn._0330.LearnDagger2"
+            android:label="dagger2Demo">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
             android:name=".learn._0331.UserActivity"
             android:label="dagger2">
             <category android:name="com.demo.view" />
@@ -331,6 +374,22 @@
 
         <!--Learn End-->
 
+
+        <!--一级分类-->
+        <activity
+            android:name=".demo.DemoListActivity"
+            android:label="@string/demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.demo.example" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".demo.elemedetail.ElemeDetailActivity"
+            android:label="饿了么详情页交互">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity android:theme="@style/translucent" android:name=".demo.elemedetail.ElemeDetailContentActivity" />
         <service
             android:name=".black.accessibility.MyAccessibilityService"
             android:enabled="true"
@@ -343,7 +402,8 @@
             <meta-data
                 android:name="android.accessibilityservice"
                 android:resource="@xml/service" />
-        </service>
+        </service><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
 
     </application>
 

@@ -10,8 +10,6 @@ import javax.inject.Inject;
 import sunning.democollection.BaseActivity;
 import sunning.democollection.R;
 import sunning.democollection.databinding.MvpMainBinding;
-import sunning.democollection.learn._0506mvp_dagger2.module.DaggerLoginComponent;
-import sunning.democollection.learn._0506mvp_dagger2.module.LoginModule;
 
 /**
  * Created by sunning on 16/5/6.
@@ -27,7 +25,7 @@ public class MvpActivity extends BaseActivity implements View.OnClickListener, L
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
         binding = DataBindingUtil.setContentView(this, R.layout.mvp_main);
-        DaggerLoginComponent.builder().loginModule(new LoginModule(this)).build().inject(this);
+//        DaggerLoginComponent.builder().loginModule(new LoginModule(this)).build().inject(this);
         initView();
     }
 
