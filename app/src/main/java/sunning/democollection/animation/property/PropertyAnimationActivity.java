@@ -5,13 +5,16 @@ package sunning.democollection.animation.property;
 
 import android.os.Bundle;
 
-import sunning.democollection.BaseActivity;
+import sunning.democollection.FrameActivity;
 
-public class PropertyAnimationActivity extends BaseActivity {
+public class PropertyAnimationActivity extends FrameActivity {
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
+    }
 
-        log(this,"");
+    @Override
+    protected String[] getSecondLevel() {
+        return new String[]{".property.first.FirstAnimation"};
     }
 }

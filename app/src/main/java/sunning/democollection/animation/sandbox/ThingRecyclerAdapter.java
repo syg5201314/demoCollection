@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 import sunning.democollection.R;
 
 
@@ -18,7 +18,7 @@ public class ThingRecyclerAdapter extends BaseRecyclerAdapter<Thing> {
     }
 
     public class ThingHolder extends BaseRecyclerAdapter<Thing>.ViewHolder {
-        @InjectView(R.id.title)
+        @BindView(R.id.title)
         TextView titleTextView;
 
         public ThingHolder(View itemView) {

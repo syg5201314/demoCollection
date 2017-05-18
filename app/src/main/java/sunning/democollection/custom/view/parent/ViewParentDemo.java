@@ -23,6 +23,7 @@ public abstract class ViewParentDemo extends BaseActivity {
         if (parent != null) {
             parent.removeView(mRootView);
         }
+
 //        } else {
 
 //        }

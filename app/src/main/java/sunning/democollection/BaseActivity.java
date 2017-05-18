@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -21,8 +20,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.InjectView;
-import sunning.democollection.animation.sandbox.Thing;
+import butterknife.BindView;
 
 /**
  * @author sunning
@@ -31,7 +29,7 @@ import sunning.democollection.animation.sandbox.Thing;
 public class BaseActivity extends AppCompatActivity {
     private Activity currentActivity;
     public
-    @InjectView(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -69,7 +67,7 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     private List<Map<String, Object>> getData(String[] array, int flag) throws ClassNotFoundException {
-        List<Map<String, Object>> myData = new ArrayList();
+        List<Map<String, Object>> myData = new ArrayList<>();
         Map<String, Object> mapData;
         if (array == null) {
             return myData;

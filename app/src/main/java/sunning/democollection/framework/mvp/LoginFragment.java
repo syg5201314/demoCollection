@@ -38,7 +38,7 @@ public class LoginFragment extends Fragment implements LoginContract.View {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binging = DataBindingUtil.inflate(inflater, R.layout.mvp_main, container, false);
+        binging = DataBindingUtil.inflate(inflater, R.layout.mvp_main, container,false);
         return binging.getRoot();
     }
 

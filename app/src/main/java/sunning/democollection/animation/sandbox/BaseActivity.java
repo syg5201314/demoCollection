@@ -17,25 +17,25 @@ import android.widget.TextView;
 import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.MaterialMenuView;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import sunning.democollection.R;
 
 public class BaseActivity extends TransitionHelper.BaseActivity {
     protected static String BASE_FRAGMENT = "base_fragment";
-    public @InjectView(R.id.toolbar) Toolbar toolbar;
-    public @InjectView(R.id.material_menu_button) MaterialMenuView homeButton;
-    public @InjectView(R.id.toolbar_title) TextView toolbarTitle;
-    public @InjectView(R.id.fab) Button fab;
-    public @InjectView(R.id.drawerLayout) DrawerLayout drawerLayout;
-    public @InjectView(R.id.base_fragment_background) View fragmentBackround;
+    public @BindView(R.id.toolbar) Toolbar toolbar;
+    public @BindView(R.id.material_menu_button) MaterialMenuView homeButton;
+    public @BindView(R.id.toolbar_title) TextView toolbarTitle;
+    public @BindView(R.id.fab) Button fab;
+    public @BindView(R.id.drawerLayout) DrawerLayout drawerLayout;
+    public @BindView(R.id.base_fragment_background) View fragmentBackround;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutResource());
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
 //        initToolbar();
         initBaseFragment(savedInstanceState);
     }

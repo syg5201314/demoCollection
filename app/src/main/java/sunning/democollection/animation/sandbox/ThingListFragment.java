@@ -13,12 +13,12 @@ import com.balysv.materialmenu.MaterialMenuDrawable;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import sunning.democollection.R;
 
 public class ThingListFragment extends TransitionHelper.BaseFragment {
-    @InjectView(R.id.recycler)
+    @BindView(R.id.recycler)
     RecyclerView recyclerView;
     ThingRecyclerAdapter recyclerAdapter;
 
@@ -27,7 +27,7 @@ public class ThingListFragment extends TransitionHelper.BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_thing_list, container, false);
-        ButterKnife.inject(this, rootView);
+        ButterKnife.bind(this, rootView);
         initRecyclerView();
         return rootView;
     }

@@ -18,6 +18,8 @@
         <item>.design.snackbar.SnackbarActivity</item>
         <item>.design.textinput.TextInputActivity</item>
         <item>.design.nav.NavigationViewActivity</item>
+        <item>.design.behavior.BehaviorActivity</item>
+        <item>.design.scrollcard.MainActivity</item>
     </string-array>
 
     <string-array name="Draw">

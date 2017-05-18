@@ -27,7 +27,7 @@ public class ElemeDetailContentActivity extends BaseActivity {
     public static int bottomY;
 
     private ArrayList<View> views;
-    private int[] imgs = {R.mipmap.pizza, R.mipmap.pic2, R.mipmap.pic3};
+    private int[] imgs = {R.mipmap.pizza, R.mipmap.pic22222, R.mipmap.pic33333};
 
 
     @Override

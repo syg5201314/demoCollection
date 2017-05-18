@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sunning.democollection">
 
-
+    <uses-sdk
+        android:minSdkVersion="21"
+        />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <application
         android:name=".AndroidApplication"
@@ -85,6 +87,11 @@
         <activity
             android:name=".animation.property.PropertyAnimationActivity"
             android:label="属性动画">
+            <category android:name="com.demo.view" />
+        </activity>
+        <activity
+            android:name=".animation.property.first.FirstAnimation"
+            android:label="属性动画初相识">
             <category android:name="com.demo.view" />
         </activity>
 
@@ -194,6 +201,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity
+            android:name=".design.behavior.BehaviorActivity"
+            android:label="自定义Behavior" >
+        </activity>
+        <activity
+            android:name=".design.scrollcard.MainActivity"
+            android:label="behavior高级使用" >
+        </activity>
         <!--ipc-->
         <activity
             android:name=".ipc.aidl.AIDLActivity"
@@ -222,6 +237,12 @@
         <activity
             android:name="sunning.democollection.custom.health.QQHealthActivity"
             android:label="QQ健康" />
+        <activity
+            android:name="sunning.democollection.custom.recyclercard.RecyclerCardActivity"
+            android:label="卡片式效果" />
+        <activity
+            android:name="sunning.democollection.custom.welcome.WelcomeActivity"
+            android:label="平行效果的欢迎页" />
 
         <!--二级分类-->
         <!--动画二级分类-->

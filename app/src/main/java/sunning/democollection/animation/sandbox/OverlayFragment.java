@@ -5,8 +5,10 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.RequiresApi;
 import android.support.v4.view.ViewCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,21 +21,21 @@ import android.widget.TextView;
 
 import com.balysv.materialmenu.MaterialMenuDrawable;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import sunning.democollection.R;
 
 public class OverlayFragment extends TransitionHelper.BaseFragment {
 
-    @InjectView(R.id.overlay) RelativeLayout overlayLayout;
-    @InjectView(R.id.text_view) TextView textView;
+    @BindView(R.id.overlay) RelativeLayout overlayLayout;
+    @BindView(R.id.text_view) TextView textView;
 
     public OverlayFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_overaly, container, false);
-        ButterKnife.inject(this, rootView);
+        ButterKnife.bind(this, rootView);
         initBodyText();
         return rootView;
     }
@@ -62,6 +64,7 @@ public class OverlayFragment extends TransitionHelper.BaseFragment {
         BaseActivity.of(getActivity()).animateHomeIcon(MaterialMenuDrawable.IconState.ARROW);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onAfterEnter() {
         animateRevealShow(overlayLayout);
@@ -122,6 +125,7 @@ public class OverlayFragment extends TransitionHelper.BaseFragment {
 //        }
 //    }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void animateRevealShow(View viewRoot) {
         View fab = BaseActivity.of(getActivity()).fab;
         int cx = fab.getLeft() + (fab.getWidth()/2); //middle of button

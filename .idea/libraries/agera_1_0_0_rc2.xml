@@ -4,8 +4,8 @@
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.agera/agera/1.0.0-rc2/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/f1d40f406f210e4a2501332e92f84c6719e32b7a/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/f1d40f406f210e4a2501332e92f84c6719e32b7a/output/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/agera-1.0.0-rc2.aar/582d10d59fc5c5d9182f8631a0517cbd/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/agera-1.0.0-rc2.aar/582d10d59fc5c5d9182f8631a0517cbd/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

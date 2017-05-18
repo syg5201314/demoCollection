@@ -6,8 +6,9 @@
     android:layout_height="match_parent">
 
     <sunning.democollection.custom.view.scroll.CustomView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:background="@color/oriange"
-        android:layout_height="80dp"
+        android:id="@+id/demo_id"
+        android:layout_height="wrap_content"
         />
 </LinearLayout>
