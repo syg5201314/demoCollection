@@ -117,13 +117,9 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void setListener(ListView listView) {
-        listView.setOnItemClickListener(new OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Map<String, Object> map = (Map<String, Object>) parent.getItemAtPosition(position);
-                startActivity((Intent) map.get("intent"));
-            }
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            Map<String, Object> map = (Map<String, Object>) parent.getItemAtPosition(position);
+            startActivity((Intent) map.get("intent"));
         });
     }
 

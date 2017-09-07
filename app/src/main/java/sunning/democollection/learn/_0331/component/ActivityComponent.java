@@ -1,6 +1,7 @@
 package sunning.democollection.learn._0331.component;
 
 import dagger.Component;
+import sunning.democollection.learn._0331.UserActivity;
 import sunning.democollection.learn._0331.bean.User;
 import sunning.democollection.learn._0331.module.UserModule;
 
@@ -9,6 +10,6 @@ import sunning.democollection.learn._0331.module.UserModule;
  */
 @Component(modules = UserModule.class)
 public interface ActivityComponent {
-    //    void inject(UserActivity activity);
+    void inject(UserActivity activity);
     User getUser();
 }

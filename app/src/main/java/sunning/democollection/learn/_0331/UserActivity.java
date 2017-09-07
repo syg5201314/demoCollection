@@ -11,11 +11,9 @@ import sunning.democollection.R;
 import sunning.democollection.learn._0331.bean.ShoppingCart;
 import sunning.democollection.learn._0331.bean.User;
 import sunning.democollection.learn._0331.component.ActivityComponent;
-import sunning.democollection.learn._0331.component.DaggerActivityComponent;
-import sunning.democollection.learn._0331.component.DaggerShoppingCartComponent;
-import sunning.democollection.learn._0331.component.ShoppingCartComponent;
-import sunning.democollection.learn._0331.module.ShoppingCartModule;
-import sunning.democollection.learn._0331.module.UserModule;
+
+//import sunning.democollection.learn._0331.component.DaggerActivityComponent;
+//import sunning.democollection.learn._0331.component.DaggerShoppingCartComponent;
 
 /**
  * Created by sunning on 16/3/31.
@@ -31,10 +29,10 @@ public class UserActivity extends BaseActivity{
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
         setContentView(R.layout.dagger_layout);
-        mActivityComponent = DaggerActivityComponent.builder().userModule(new UserModule()).build();
-        ShoppingCartComponent build = DaggerShoppingCartComponent.builder().activityComponent(mActivityComponent).shoppingCartModule(new ShoppingCartModule()).build();
+//        mActivityComponent = DaggerActivityComponent.builder().userModule(new UserModule()).build();
+//        ShoppingCartComponent build = DaggerShoppingCartComponent.builder().activityComponent(mActivityComponent).shoppingCartModule(new ShoppingCartModule()).build();
         User user = mActivityComponent.getUser();
-        build.inject(this);
+//        build.inject(this);
 //        mActivityComponent.inject(this);
         ((TextView)findViewById(R.id.name)).setText(user.userName);
         ((TextView)findViewById(R.id.pwd)).setText(user.pwd);

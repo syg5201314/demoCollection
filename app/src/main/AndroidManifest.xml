@@ -94,6 +94,11 @@
             android:label="属性动画初相识">
             <category android:name="com.demo.view" />
         </activity>
+        <activity
+            android:name=".animation.property.second.SecondAnimation"
+            android:label="属性动画在相识">
+            <category android:name="com.demo.view" />
+        </activity>
 
         <!--动画(Animation)结束-->
 

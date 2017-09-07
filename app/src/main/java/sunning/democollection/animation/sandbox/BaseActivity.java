@@ -45,12 +45,7 @@ public class BaseActivity extends TransitionHelper.BaseActivity {
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayHomeAsUpEnabled(false);
             getSupportActionBar().setTitle("");
-            homeButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    onBackPressed();
-                }
-            });
+            homeButton.setOnClickListener(v -> onBackPressed());
         }
     }
 

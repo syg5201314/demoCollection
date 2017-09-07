@@ -23,7 +23,6 @@ public class AIDLActivity extends BaseActivity {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mICompute = ICompute.Stub.asInterface(service);
-
             try {
                 Log.e("mICompute", String.valueOf(mICompute.add(2, 3)));
             } catch (RemoteException e) {

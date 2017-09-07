@@ -5,10 +5,11 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="/Library/gradle-4.0-milestone-1" />
+        <option name="gradleHome" value="/Library/gradle-4.0-rc-1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/anko" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

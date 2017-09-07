@@ -1,11 +1,8 @@
 package sunning.democollection.learn._0330;
 
 import android.os.Bundle;
-import android.util.Log;
 
 import sunning.democollection.BaseActivity;
-import sunning.democollection.learn._0330.component.DaggerOneComponent;
-import sunning.democollection.learn._0330.module.PersonModule;
 import sunning.democollection.learn._0330.module.bean.BasePerson;
 
 /**
@@ -18,8 +15,8 @@ public class LearnDagger2 extends BaseActivity {
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
         BasePerson p = new BasePerson(2, "sunning");
-        BasePerson basePerson = DaggerOneComponent.builder().personModule(new PersonModule(444, "Dagger2")).build().basePerson();
-        Log.e("LearnDagger2", "new: " + p.age);
-        Log.e("LearnDagger2", "dagger2: " + basePerson.age);
+//        BasePerson basePerson = DaggerOneComponent.builder().personModule(new PersonModule(444, "Dagger2")).build().basePerson();
+//        Log.e("LearnDagger2", "new: " + p.age);
+//        Log.e("LearnDagger2", "dagger2: " + basePerson.age);
     }
 }

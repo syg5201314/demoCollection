@@ -1,10 +1,12 @@
 <component name="libraryTable">
   <library name="runtime-0.8.4">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runtime-0.8.4.aar/26266da65f5fdaf7be6fdf80e499fdf2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runtime-0.8.4.aar/26266da65f5fdaf7be6fdf80e499fdf2/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/75c7c48c9a2ef38cab091528fa5632cfc1d3c90f/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/75c7c48c9a2ef38cab091528fa5632cfc1d3c90f/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.antfortune.freeline/runtime/0.8.4/2e39139634708654149588f814de5630af6fdf7b/runtime-0.8.4-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

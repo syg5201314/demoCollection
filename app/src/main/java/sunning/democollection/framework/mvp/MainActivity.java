@@ -22,7 +22,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.test);
 
         LoginFragment fragment = LoginFragment.newInstance();
-        DaggerLoginPresenterComponent.builder().presenterModule(new PresenterModule(fragment)).build().inject(this);
+//        DaggerLoginPresenterComponent.builder().presenterModule(new PresenterModule(fragment)).build().inject(this);
         getSupportFragmentManager().beginTransaction().replace(R.id.contentFrame, fragment).commit();
         Log.e("sss", presenter.toString());
 

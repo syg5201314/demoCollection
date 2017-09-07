@@ -26,4 +26,9 @@ public class IComputeService extends Service {
     public IBinder onBind(Intent intent) {
         return mICompute;
     }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return super.onStartCommand(intent, flags, startId);
+    }
 }

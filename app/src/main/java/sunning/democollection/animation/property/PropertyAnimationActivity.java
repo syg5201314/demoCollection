@@ -15,6 +15,7 @@ public class PropertyAnimationActivity extends FrameActivity {
 
     @Override
     protected String[] getSecondLevel() {
-        return new String[]{".property.first.FirstAnimation"};
+        return new String[]{".animation.property.first.FirstAnimation",
+                ".animation.property.second.SecondAnimation"};
     }
 }

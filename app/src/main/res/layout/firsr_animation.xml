@@ -5,11 +5,17 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:src="@mipmap/audi"
+        android:src="@mipmap/avatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
         android:id="@+id/btn_animation"
         tools:targetApi="donut" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="点我跟你走"
+        android:id="@+id/btn_animation_button"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

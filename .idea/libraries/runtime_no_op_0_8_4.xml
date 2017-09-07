@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="runtime-no-op-0.8.4">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runtime-no-op-0.8.4.aar/5a52beed8af54f4ff94d9482228eb1a6/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runtime-no-op-0.8.4.aar/5a52beed8af54f4ff94d9482228eb1a6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/d2cbf84c0ccf303bae4596b9b9caeabbf58ad5c9/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d2cbf84c0ccf303bae4596b9b9caeabbf58ad5c9/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
